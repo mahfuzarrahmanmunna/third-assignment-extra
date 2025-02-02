@@ -8,6 +8,8 @@
     <!-- Tailwind CSS and DaisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN link -->
+    <script src="https://kit.fontawesome.com/5c54d19429.js" crossorigin="anonymous"></script>
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +26,7 @@
                         primary_clr: 'rgba(23, 152, 0, 1)',
                         secondary_clr: '#EFEBE3',
                         text_clr: 'rgba(38, 38, 38, 1)',
+                        star_clr: '#FFC107'
                     },
                     fontFamily: {
                         'sora': ['Sora', 'serif'],
@@ -151,6 +154,206 @@
                         <p class="text-[14px] lg:text-lg text-text_clr font-normal">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Product -->
+        <section class="bg-secondary_clr">
+            <div class="lg:mt-32 mt-12 lg:w-5/6 mx-auto p-3">
+                <h4 class="font-semibold text-xl lg:text-3xl mt-12 lg:w-5/6 lg:mb-10 mb-5  text-primary_clr">
+                    Popular Products
+                </h4>
+                <div class="lg:flex lg:gap-6">
+                    <div
+                        class="bg-gradient-to-br from-green-500 to-green-100 rounded-lg lg:px-8 pt-4 lg:pt-8 px-4 lg:w-2/5 w-full space-y-3">
+                        <h2 class="lg:text-3xl text-xl text-white font-bold">
+                            30% off
+                        </h2>
+                        <p class="text-[14px] lg:text-lg text-text_clr font-normal">
+                            Discover a world of treats, toys and <br> essentials handpicded for
+                        </p>
+                        <div class="flex">
+                            <button class="lg:px-8 px-4 lg:py-2 py-1 bg-white rounded-md btn">
+                                Buy Now
+                            </button>
+                            <div class="w-full">
+                                <img class="w-full" src="assets/vegetable-offer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w3/5 grid lg:grid-cols-3 grid-cols-2 lg:gap-6 gap-3 mt-6 lg:mt-0">
+                        <!-- Card-1 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/onion.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Onion 1 KG
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-2 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/potato.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Potato 4 Kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-3 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/tomato.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Tomato 5kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-4 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/carrot.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Carrot 1 Kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-5 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/onion.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Onion 1 kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-6 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/potato.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Potato 3 kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-7 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/onion.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Onion 1 KG
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-8 -->
+                        <div class="bg-white flex lg:p-3 p-2 rounded-md items-center">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/carrot.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Carrot 7 kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card-9 -->
+                        <div class="bg-white lg:flex lg:p-3 p-1 rounded-md items-center hidden">
+                            <figure
+                                class="lg:w-[76px] lg:h-[76px] h-[45px] w-[45px] flex items-center justify-center lg:p-3 p-2 bg-secondary_clr rounded-md">
+                                <img src="assets/my-asset/tomato.png" alt="">
+                            </figure>
+                            <div class="ms-2 lg:ms-4">
+                                <div class="text-[10px] lg:text-[12px]">
+                                    <i class="fa-solid fa-star text-[gold]"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <h4 class="font-bold lg:text-[13px] text-[10px]">
+                                    Tomato 5 kg
+                                </h4>
+                                <p class="text-[10px] lg:text-[12px]">
+                                    $39.99
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
