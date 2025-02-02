@@ -26,7 +26,9 @@
                         primary_clr: 'rgba(23, 152, 0, 1)',
                         secondary_clr: '#EFEBE3',
                         text_clr: 'rgba(38, 38, 38, 1)',
-                        star_clr: '#FFC107'
+                        star_clr: '#FFC107',
+                        dawat_clr: '#115414',
+                        india_clr: '#102861',
                     },
                     fontFamily: {
                         'sora': ['Sora', 'serif'],
@@ -40,7 +42,7 @@
 
 <body class="font-sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
-        <nav class="lg:w-5/6 lg:mx-auto lg:border-0 border-2">
+        <nav class="lg:w-5/6 lg:mx-auto lg:border-0 border-2 bg-[#fff] lg:bg-[#fdf9f9]">
             <div class="navbar flex justify-between">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -358,9 +360,97 @@
                 </div>
             </div>
         </section>
+        <!-- Offer Section -->
+        <section class="lg:mt-20 mt-12 lg:w-5/6 mx-auto p-3 lg:p-0">
+            <h3 class="text-3xl font-semibold text-primary_clr lg:mb-10 mb-5">
+                Arrival & Offers
+            </h3>
+            <div class="lg:flex gap-5">
+                <div
+                    class="flex justify-between bg-dawat_clr items-center lg:ps-10 ps-4 lg:pt-6 pt-3 rounded-2xl lg:w-3/5">
+                    <div class="space-y-6">
+                        <img src="assets/dawat-logo.png" alt="">
+                        <button class="lg:py-4 lg:px-9 bg-[#63B76D] text-white btn border-none">
+                            Cook Exotic Dishes
+                        </button>
+                        <h4 class="text-3xl font-normal text-white lg:flex hidden">
+                            UP to <span class="font-bold">20% OFF</span>
+                        </h4>
+                    </div>
+                    <figure>
+                        <img src="assets/dawat-mock-up.png" alt="">
+                    </figure>
+                </div>
+                <div
+                    class="flex justify-between bg-india_clr items-center lg:ps-10 ps-4 lg:pr-2 pr-1 lg:pt-6 pt-3 rounded-2xl lg:w-2/5 lg:mt-0 mt-6">
+                    <div class="space-y-2">
+                        <img src="assets/india-gate-logo.png" alt="">
+                        <button class="lg:py-4 lg:px-9 bg-[#2A4D97] text-white btn border-none">
+                            World’s No.1 Rice
+                        </button>
+                        <h2 class="text-white text-2xl lg:mb-0 pb-3 lg:pb-0">
+                            UP to <span class="font-bold">40% OFF</span>
+                        </h2>
+                    </div>
+                    <figure>
+                        <img class="w-[120px] lg:w-full" src="assets/india-gate-mock-up.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="lg:mt-72 mt-52 relative">
+        <!-- News Section -->
+        <section class="lg:w-5/6 mx-auto p-3 lg:p-0 absolute -top-52 lg:left-32">
+            <div class="lg:flex bg-secondary_clr items-center rounded-3xl ">
+                <div class="w-[250px] lg:w-[442px] mx-auto p-7">
+                    <img src="assets/vegetable-busket.png" alt="">
+                </div>
+                <div class="lg:p-7 p-3">
+                    <h3 class="text-[28px] font-bold lg:mb-5 lg:text-gray-700 text-primary_clr">
+                        Get Grocery News!
+                    </h3>
+                    <p class="lg:mb-8">
+                        Exclusive training tips, ticks, product deals and more.
+                    </p>
+                    <input class="lg:mb-8 lg:p-4 w-4/5 bg-[#fff] rounded-lg" placeholder="Enter email...." type="text"
+                        name="" id="">
+                    <br>
+                    <button class="btn bg-primary_clr">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Main Footer Section -->
+        <section class="bg-primary_clr lg:pt-64 pt-52">
+            <div class=" lg:w-5/6 mx-auto">
+                <div class="p-3 space-y-8 lg:space-y-0 lg:flex justify-between">
+                    <div class="">
+                        <img src="assets/logo-footer.png" alt="">
+                        <p class="text-white font-normal">
+                            Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends
+                        </p>
+                    </div>
+                    <div class="text-white">
+                        <ul class="space-y-4">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-white ">
+                        <p>Follow Us</p>
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
