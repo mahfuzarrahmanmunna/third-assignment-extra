@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Assignment (Extra) </title>
+    <!-- Tailwind CSS and DaisyUI CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <script src="tailwind.config.js"></script>
+    <!-- font family and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_clr: 'rgba(23, 152, 0, 1)',
+                        secondary_clr: '#EFEBE3',
+                        text_clr: 'rgba(38, 38, 38, 1)',
+                    },
+                    fontFamily: {
+                        'sora': ['Sora', 'serif'],
+                        'adlam': ['ADLaM Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sora">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
+        <nav class="lg:w-5/6 lg:mx-auto lg:border-0 border-2">
+            <div class="navbar flex justify-between">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <img src="assets/logo-header.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end lg:flex gap-3 hidden ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn bg-white border border-green-500 px-8">Login</a>
+                    <a class="btn bg-primary_clr text-white px-8 py-2">Register</a>
+                </div>
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner start -->
+        <section class="lg:mt-20 mt-12">
+            <div class="text-center">
+                <h2 class="lg:text-5xl text-4xl mb-4 lg:mb-8">
+                    Freshness <span class="text-primary_clr">You Can <br> Count</span>
+                    On, Prices You’ll Love!
+                </h2>
+                <p class="text-[14px] lg:mb-10 mb-4">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve
+                    got you
+                    covered every day!
+                </p>
+                <figure class="lg:w-1/3 mx-auto">
+                    <img src="assets/hero-vegetables.png" alt="">
+                </figure>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- service section -->
+        <section class="lg:mt-32 mt-12 lg:w-5/6 mx-auto p-3">
+            <h3 class="text-primary_clr text-2xl lg:text-3xl mb-6 lg:mb-10">
+                Services
+            </h3>
+            <div class="lg:flex gap-6 spy6 space-y-6 lg:space-y-0">
+                <!-- Card-1 -->
+                <div class="bg-secondary_clr text-center rounded-2xl">
+                    <div class="p-5 lg:p-6 space-y-3">
+                        <div class="w-[94px] h-[94px] lg:w-[112px] lg:h-[112px] p-5 rounded-full bg-base-100 mx-auto ">
+                            <img class="flex justify-center items-center" src="assets/service.png" alt="">
+                        </div>
+                        <h5 class="lg:text-2xl text-xl font-semibold">
+                            24/7 Services
+                        </h5>
+                        <p class="text-[14px] lg:text-xl">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="bg-secondary_clr text-center rounded-2xl">
+                    <div class="p-5 lg:p-6 space-y-3">
+                        <div class="w-[94px] h-[94px] lg:w-[112px] lg:h-[112px] p-5 rounded-full bg-base-100 mx-auto ">
+                            <img class="flex justify-center items-center" src="assets/delivery.png" alt="">
+                        </div>
+                        <h5 class="lg:text-2xl text-xl font-semibold">
+                            Fast Delivery
+                        </h5>
+                        <p class="text-[14px] lg:text-xl">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="bg-secondary_clr text-center rounded-2xl">
+                    <div class="p-5 lg:p-6 space-y-3">
+                        <div class="w-[94px] h-[94px] lg:w-[112px] lg:h-[112px] p-5 rounded-full bg-base-100 mx-auto ">
+                            <img class="flex justify-center items-center" src="assets/healthy.png" alt="">
+                        </div>
+                        <h5 class="lg:text-2xl text-xl font-semibold">
+                            Healthy Products
+                        </h5>
+                        <p class="text-[14px] lg:text-lg text-text_clr font-normal">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
